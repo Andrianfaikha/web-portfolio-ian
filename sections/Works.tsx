@@ -62,11 +62,11 @@ const projects = [
 export default function Works() {
   return (
     <div id="projects" className="relative bg-black py-24 md:py-36 border-t border-zinc-900">
-      <div className="max-w-7xl mx-auto w-full px-6 md:px-12 flex flex-col">
+      <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 md:px-12 flex flex-col">
 
         {/* Section Header with Massive Swiss Typography */}
         <div className="flex justify-between items-baseline mb-20 relative z-10 select-none">
-          <h2 className="font-syne font-black text-4xl min-[400px]:text-5xl sm:text-6xl md:text-8xl lg:text-[7vw] leading-none uppercase tracking-tighter break-words">
+          <h2 className="font-syne font-black text-3xl min-[375px]:text-4xl min-[430px]:text-5xl sm:text-6xl md:text-8xl lg:text-[7vw] leading-none uppercase tracking-tighter break-words">
             SELECTED<br />
             <span className="text-zinc-500 font-light">WORKS</span>
           </h2>

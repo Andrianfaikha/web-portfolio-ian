@@ -13,7 +13,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="bg-black py-24 md:py-36 px-6 md:px-12 border-t border-zinc-900 overflow-hidden relative"
+      className="bg-black py-24 md:py-36 px-4 sm:px-6 md:px-12 border-t border-zinc-900 overflow-hidden relative"
     >
       <div className="max-w-7xl mx-auto w-full flex flex-col items-center text-center relative z-10 select-none">
 
@@ -32,7 +32,7 @@ export default function Contact() {
         >
           <a
             href="mailto:andrianfaikha2411@gmail.com"
-            className="font-syne font-black text-4xl min-[400px]:text-5xl sm:text-7xl md:text-9xl lg:text-[11vw] leading-none uppercase tracking-tighter text-white hover:text-zinc-300 transition-colors duration-500 inline-block group relative break-words text-center"
+            className="font-syne font-black text-3xl min-[375px]:text-4xl min-[430px]:text-5xl sm:text-7xl md:text-9xl lg:text-[11vw] leading-none uppercase tracking-tighter text-white hover:text-zinc-300 transition-colors duration-500 inline-block group relative break-words text-center"
           >
             {"LET'S WORK"} <br /> {"TOGETHER"}
             {/* Dynamic expanding line below LET'S WORK TOGETHER */}

@@ -7,13 +7,13 @@ export default function About() {
   return (
     <section
       id="about"
-      className="bg-black py-24 md:py-36 px-6 md:px-12 border-t border-zinc-900 overflow-hidden"
+      className="bg-black py-24 md:py-36 px-4 sm:px-6 md:px-12 border-t border-zinc-900 overflow-hidden"
     >
       <div className="max-w-7xl mx-auto w-full">
 
         {/* Title */}
         <div className="mb-20 select-none">
-          <h2 className="font-syne font-black text-4xl min-[400px]:text-5xl sm:text-6xl md:text-8xl lg:text-[7vw] leading-none uppercase tracking-tighter break-words">
+          <h2 className="font-syne font-black text-3xl min-[375px]:text-4xl min-[430px]:text-5xl sm:text-6xl md:text-8xl lg:text-[7vw] leading-none uppercase tracking-tighter break-words">
             ABOUT <span className="text-zinc-500 font-light">IAN</span>
           </h2>
         </div>
@@ -56,10 +56,10 @@ export default function About() {
               <span className="text-[10px] font-mono text-zinc-500 uppercase tracking-[0.25em] block">
                 [ Introduction ]
               </span>
-              <p className="font-syne font-medium text-xl min-[400px]:text-2xl md:text-3xl text-white leading-tight tracking-tight uppercase break-words hyphens-auto">
+              <p className="font-syne font-medium text-lg min-[375px]:text-xl min-[430px]:text-2xl md:text-3xl text-white leading-tight tracking-tight uppercase break-words hyphens-auto">
                 An Information Technology undergraduate blending data-driven analytics with premium user-centered design.
               </p>
-              <p className="text-xs md:text-sm text-zinc-400 leading-relaxed tracking-wider font-sans pt-2">
+              <p className="text-xs md:text-sm text-zinc-400 leading-relaxed tracking-wider font-sans pt-2 break-words">
                 With a strong foundation in UI/UX design, product management, and frontend development, I bridge the gap between technical execution and creative direction. I have experience in managing social media performance, leading product discovery cycles, and building interactive prototypes that harmonize function with absolute artistic perfection.
               </p>
             </motion.div>
