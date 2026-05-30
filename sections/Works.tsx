@@ -24,6 +24,7 @@ const projects = [
     role: "UI/UX Designer",
     year: "2025",
     image: "/Cuanki.png",
+    link: "https://cuanki.vercel.app/",
     desc: [
       "Conducted user research and persona building",
       "Designed user flows and wireframes",
@@ -37,6 +38,7 @@ const projects = [
     role: "UI/UX Designer",
     year: "2026",
     image: "/wellsync.png",
+    link: "https://www.figma.com/proto/de3iLBAc8KsemjmwI4JBTa/WellSync-Kelompok-6?page-id=13%3A2&node-id=85-102&viewport=687%2C1313%2C1.02&t=fMuGrykZjWW2JDon-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=85%3A102&show-proto-sidebar=1",
     desc: [
       "Designed wireframes and high-fidelity UI in Figma",
       "Conducted UX research and user journey analysis",
@@ -50,6 +52,7 @@ const projects = [
     role: "Product Manager",
     year: "2026",
     image: "/kopianku.png",
+    link: "https://kopianku.vercel.app/",
     desc: [
       "Defined product roadmap and feature strategy",
       "Managed collaboration between design and development teams",
@@ -86,6 +89,17 @@ export default function Works() {
               transition={{ duration: 0.8, delay: index * 0.1, ease: [0.16, 1, 0.3, 1] }}
               className="group relative flex flex-col w-full"
             >
+              {/* Overlay link for the entire card if project.link exists */}
+              {project.link && (
+                <a 
+                  href={project.link} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="absolute inset-0 z-20 cursor-pointer" 
+                  aria-label={`View ${project.title}`} 
+                />
+              )}
+              
               <div className="flex justify-between items-end mb-4 border-b border-zinc-900 pb-4">
                 <div className="min-w-0 flex-1">
                   <span className="text-[12px] font-mono text-zinc-500 tracking-wider mb-2 block">
@@ -106,14 +120,14 @@ export default function Works() {
                 whileInView={{ filter: "grayscale(0%) contrast(1)" }}
                 viewport={{ once: true, margin: "-20%" }}
                 transition={{ duration: 1.5, delay: 0.2 }}
-                className="relative w-full aspect-[4/3] md:aspect-[16/9] lg:aspect-[21/9] overflow-hidden bg-zinc-950 border border-zinc-900 transition-colors duration-700 hover:border-zinc-700"
+                className="relative w-full aspect-[4/3] md:aspect-[16/9] lg:aspect-[21/9] overflow-hidden bg-zinc-950 border border-zinc-900 transition-colors duration-700 group-hover:border-zinc-700"
               >
                 <Image
                   src={project.image}
                   alt={project.title}
                   fill
                   sizes="100vw"
-                  className="object-contain p-4 md:p-8 transition-transform duration-700 ease-out hover:scale-105"
+                  className="object-contain p-4 md:p-8 transition-transform duration-700 ease-out group-hover:scale-105"
                 />
               </motion.div>
 
