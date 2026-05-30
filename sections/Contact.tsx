@@ -32,7 +32,7 @@ export default function Contact() {
         >
           <a
             href="mailto:andrianfaikha2411@gmail.com"
-            className="font-syne font-black text-5xl sm:text-7xl md:text-9xl lg:text-[11vw] leading-none uppercase tracking-tighter text-white hover:text-zinc-300 transition-colors duration-500 inline-block group relative"
+            className="font-syne font-black text-[12vw] sm:text-7xl md:text-9xl lg:text-[11vw] leading-none uppercase tracking-tighter text-white hover:text-zinc-300 transition-colors duration-500 inline-block group relative break-words text-center"
           >
             {"LET'S WORK"} <br /> {"TOGETHER"}
             {/* Dynamic expanding line below LET'S WORK TOGETHER */}

@@ -42,7 +42,7 @@ export default function Skills() {
     >
       <div className="max-w-7xl mx-auto w-full px-6 md:px-12 mb-16">
         <div className="flex flex-col lg:flex-row lg:justify-between items-start gap-4">
-          <h2 className="font-syne font-black text-5xl sm:text-6xl md:text-8xl lg:text-[7vw] leading-none uppercase tracking-tighter">
+          <h2 className="font-syne font-black text-[11vw] sm:text-6xl md:text-8xl lg:text-[7vw] leading-none uppercase tracking-tighter break-words">
             CAPABILITIES
           </h2>
           <p className="max-w-xs text-xs md:text-sm text-zinc-500 leading-relaxed tracking-wider pt-3">
