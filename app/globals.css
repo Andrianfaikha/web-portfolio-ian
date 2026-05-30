@@ -25,6 +25,8 @@
     color: #ffffff;
     font-feature-settings: "cv02", "cv03", "cv04", "cv11";
     overflow-x: hidden;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
   }
 
   /* Custom Selection Color */
@@ -35,6 +37,25 @@
 }
 
 @layer utilities {
+  /* Responsive section headings using clamp — guaranteed to fit any screen */
+  .text-section-heading {
+    font-size: clamp(1.75rem, 7vw, 5.5rem);
+    line-height: 0.9;
+    letter-spacing: -0.04em;
+  }
+
+  .text-contact-heading {
+    font-size: clamp(1.75rem, 10vw, 11rem);
+    line-height: 0.9;
+    letter-spacing: -0.04em;
+  }
+
+  .text-about-intro {
+    font-size: clamp(1.125rem, 4vw, 1.875rem);
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+  }
+
   /* Editorial Swiss Typography utilities */
   .text-huge {
     font-size: clamp(3rem, 10vw, 15rem);
