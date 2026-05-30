@@ -51,7 +51,7 @@ export default function Experience() {
 
         {/* Header Section */}
         <div className="flex flex-col lg:flex-row lg:justify-between items-start gap-6 mb-20 select-none">
-          <h2 className="font-syne font-black text-[11vw] sm:text-6xl md:text-8xl lg:text-[7vw] leading-none uppercase tracking-tighter">
+          <h2 className="font-syne font-black text-4xl min-[400px]:text-5xl sm:text-6xl md:text-8xl lg:text-[7vw] leading-none uppercase tracking-tighter">
             EXPERIENCE
           </h2>
           <p className="max-w-xs text-xs md:text-sm text-zinc-500 leading-relaxed tracking-wider pt-3">

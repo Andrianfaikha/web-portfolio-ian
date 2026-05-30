@@ -13,7 +13,7 @@ export default function About() {
 
         {/* Title */}
         <div className="mb-20 select-none">
-          <h2 className="font-syne font-black text-[12vw] sm:text-6xl md:text-8xl lg:text-[7vw] leading-none uppercase tracking-tighter break-words">
+          <h2 className="font-syne font-black text-4xl min-[400px]:text-5xl sm:text-6xl md:text-8xl lg:text-[7vw] leading-none uppercase tracking-tighter break-words">
             ABOUT <span className="text-zinc-500 font-light">IAN</span>
           </h2>
         </div>
