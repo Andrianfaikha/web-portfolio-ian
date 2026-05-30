@@ -61,12 +61,12 @@ const projects = [
 
 export default function Works() {
   return (
-    <div id="projects" className="relative bg-black py-20 md:py-36 border-t border-zinc-900">
+    <div id="projects" className="relative bg-black py-24 md:py-36 border-t border-zinc-900">
       <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 md:px-12 flex flex-col">
 
         {/* Section Header with Massive Swiss Typography */}
-        <div className="flex justify-between items-baseline mb-16 md:mb-20 relative z-10 select-none">
-          <h2 className="font-syne font-black text-section-heading uppercase">
+        <div className="flex justify-between items-baseline mb-20 relative z-10 select-none">
+          <h2 className="font-syne font-black text-3xl min-[375px]:text-4xl min-[430px]:text-5xl sm:text-6xl md:text-8xl lg:text-[7vw] leading-none uppercase tracking-tighter break-words">
             SELECTED<br />
             <span className="text-zinc-500 font-light">WORKS</span>
           </h2>
@@ -76,7 +76,7 @@ export default function Works() {
         </div>
 
         {/* Vertical List of Project Cards */}
-        <div className="flex flex-col gap-16 md:gap-24">
+        <div className="flex flex-col gap-24">
           {projects.map((project, index) => (
             <motion.div
               key={project.num}
@@ -87,21 +87,21 @@ export default function Works() {
               className="group relative flex flex-col w-full"
             >
               <div className="flex justify-between items-end mb-4 border-b border-zinc-900 pb-4">
-                <div className="min-w-0 flex-1">
+                <div>
                   <span className="text-[12px] font-mono text-zinc-500 tracking-wider mb-2 block">
                     {project.num} —
                   </span>
-                  <h3 className="font-syne font-bold text-xl sm:text-3xl md:text-5xl uppercase tracking-tight text-white group-hover:text-zinc-300 transition-colors duration-300">
+                  <h3 className="font-syne font-bold text-2xl sm:text-3xl md:text-5xl uppercase tracking-tight text-white group-hover:text-zinc-300 transition-colors duration-300">
                     {project.title}
                   </h3>
                 </div>
-                <span className="text-sm font-mono text-zinc-400 bg-zinc-950 border border-zinc-900 px-4 py-2 hidden sm:block flex-shrink-0 ml-4">
+                <span className="text-sm font-mono text-zinc-400 bg-zinc-950 border border-zinc-900 px-4 py-2 hidden sm:block">
                   {project.year}
                 </span>
               </div>
 
               {/* Box containing the project mockup image */}
-              <motion.div
+              <motion.div 
                 initial={{ filter: "grayscale(100%) contrast(1.2)" }}
                 whileInView={{ filter: "grayscale(0%) contrast(1)" }}
                 viewport={{ once: true, margin: "-20%" }}
@@ -118,15 +118,15 @@ export default function Works() {
               </motion.div>
 
               {/* Project Metadata */}
-              <div className="mt-6 md:mt-8 flex flex-col md:flex-row gap-6 md:gap-8 justify-between items-start">
+              <div className="mt-8 flex flex-col md:flex-row gap-8 justify-between items-start">
                 <div className="md:w-1/3">
-                  <p className="text-xs sm:text-sm text-zinc-400 uppercase tracking-widest font-mono border-l-2 border-zinc-800 pl-4 py-1">
+                  <p className="text-sm text-zinc-400 uppercase tracking-widest font-mono border-l-2 border-zinc-800 pl-4 py-1">
                     ROLE: <span className="text-white font-bold">{project.role}</span>
                   </p>
                 </div>
                 <div className="md:w-2/3 flex flex-col space-y-2">
                   {project.desc.map((item, i) => (
-                    <p key={i} className="text-xs sm:text-sm md:text-base text-zinc-500 font-sans tracking-wide leading-relaxed">
+                    <p key={i} className="text-sm md:text-base text-zinc-500 font-sans tracking-wide leading-relaxed">
                       • {item}
                     </p>
                   ))}
