@@ -43,7 +43,7 @@ export default function About() {
           </motion.div>
 
           {/* Right Column: Editorial Text Blocks */}
-          <div className="col-span-12 lg:col-span-7 flex flex-col justify-start space-y-10 lg:space-y-12">
+          <div className="col-span-12 lg:col-span-7 flex flex-col justify-start space-y-10 lg:space-y-12 w-[92%] sm:w-full">
 
             {/* Introduction */}
             <motion.div
