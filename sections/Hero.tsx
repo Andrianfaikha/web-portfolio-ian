@@ -58,7 +58,7 @@ export default function Hero() {
           <div className="absolute w-[60%] h-[80%] border border-zinc-800 opacity-20 -rotate-6 translate-x-4 -translate-y-4 pointer-events-none" />
           
           {/* Main Portrait Wrapper */}
-          <div className="relative w-[70%] h-[90%] md:w-[65%] md:h-[95%] lg:w-[80%] lg:h-[90%] bg-zinc-950 overflow-hidden grayscale contrast-125 border border-zinc-900 shadow-2xl group">
+          <div className="relative w-[70%] h-[90%] md:w-[65%] md:h-[95%] lg:w-[80%] lg:h-[90%] bg-zinc-950 overflow-hidden contrast-125 border border-zinc-900 shadow-2xl group">
             <Image
               src="/ian_profile.png"
               alt="Ian Profile"
