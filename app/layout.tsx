@@ -17,12 +17,12 @@ const syne = Syne({
 });
 
 export const metadata: Metadata = {
-  title: "Andrian Faikha — Web Portfolio",
+  title: "Andrian Faikha's Web Portfolio",
   description: "A creative portfolio and editorial experience showcase by Andrian Faikha, a Product Manager, UI/UX Designer, and Frontend Developer specializing in brutalist minimalism and luxurious digital products.",
   keywords: ["Product Manager", "UI/UX Designer", "Frontend Developer", "Next.js Portfolio", "Brutalist Design", "Creative Portfolio"],
   authors: [{ name: "Andrian Faikha" }],
   openGraph: {
-    title: "Andrian Faikha — Web Portfolio",
+    title: "Andrian Faikha's Web Portfolio",
     description: "A creative portfolio and editorial experience showcase by Andrian Faikha",
     type: "website",
     locale: "en_US",
