@@ -56,10 +56,10 @@ export default function About() {
               <span className="text-[10px] font-mono text-zinc-500 uppercase tracking-[0.25em] block">
                 [ Introduction ]
               </span>
-              <p className="font-syne font-medium text-about-intro text-white uppercase">
+              <p className="font-syne font-medium text-about-intro text-white uppercase break-words hyphens-auto">
                 An Information Technology undergraduate blending data-driven analytics with premium user-centered design.
               </p>
-              <p className="text-xs md:text-sm text-zinc-400 leading-relaxed tracking-wider font-sans pt-2">
+              <p className="text-xs md:text-sm text-zinc-400 leading-relaxed tracking-wider font-sans pt-2 break-words">
                 With a strong foundation in UI/UX design, product management, and frontend development, I bridge the gap between technical execution and creative direction. I have experience in managing social media performance, leading product discovery cycles, and building interactive prototypes that harmonize function with absolute artistic perfection.
               </p>
             </motion.div>
