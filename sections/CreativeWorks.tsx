@@ -100,15 +100,15 @@ export default function CreativeWorks() {
   };
 
   return (
-    <section className="relative bg-black py-24 md:py-36 border-t border-zinc-900 overflow-hidden">
-      <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 md:px-12 flex flex-col mb-16">
+    <section className="relative bg-black py-20 md:py-36 border-t border-zinc-900 overflow-hidden">
+      <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 md:px-12 flex flex-col mb-12 md:mb-16">
         <div className="flex justify-between items-baseline relative z-10 select-none">
-          <h2 className="font-syne font-black text-3xl min-[375px]:text-4xl min-[430px]:text-5xl sm:text-5xl md:text-7xl lg:text-[6vw] leading-none uppercase tracking-tighter break-words">
+          <h2 className="font-syne font-black text-section-heading uppercase">
             CREATIVE<br />
             <span className="text-zinc-500 font-light">WORKS</span>
           </h2>
         </div>
-        <p className="text-zinc-400 font-sans text-sm md:text-base mt-6 max-w-2xl">
+        <p className="text-zinc-400 font-sans text-xs sm:text-sm md:text-base mt-4 sm:mt-6 max-w-2xl">
           Use the arrows or swipe to explore my creative design projects, ranging from digital marketing campaigns, event inaugurations, to social media branding.
         </p>
       </div>
@@ -119,26 +119,26 @@ export default function CreativeWorks() {
         {/* Left Arrow Floating Button */}
         <button
           onClick={scrollLeft}
-          className="absolute left-2 md:left-6 top-1/2 -translate-y-1/2 z-20 p-3 md:p-4 bg-black/60 backdrop-blur-md border border-zinc-800 rounded-full hover:bg-zinc-900 transition-colors group shadow-2xl flex items-center justify-center"
+          className="absolute left-1 sm:left-2 md:left-6 top-1/2 -translate-y-1/2 z-20 p-2 sm:p-3 md:p-4 bg-black/60 backdrop-blur-md border border-zinc-800 rounded-full hover:bg-zinc-900 transition-colors group shadow-2xl flex items-center justify-center"
           aria-label="Previous Slide"
         >
-          <svg className="w-6 h-6 text-zinc-400 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" /></svg>
+          <svg className="w-5 h-5 sm:w-6 sm:h-6 text-zinc-400 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" /></svg>
         </button>
 
         {/* Right Arrow Floating Button */}
         <button
           onClick={scrollRight}
-          className="absolute right-2 md:right-6 top-1/2 -translate-y-1/2 z-20 p-3 md:p-4 bg-black/60 backdrop-blur-md border border-zinc-800 rounded-full hover:bg-zinc-900 transition-colors group shadow-2xl flex items-center justify-center"
+          className="absolute right-1 sm:right-2 md:right-6 top-1/2 -translate-y-1/2 z-20 p-2 sm:p-3 md:p-4 bg-black/60 backdrop-blur-md border border-zinc-800 rounded-full hover:bg-zinc-900 transition-colors group shadow-2xl flex items-center justify-center"
           aria-label="Next Slide"
         >
-          <svg className="w-6 h-6 text-zinc-400 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
+          <svg className="w-5 h-5 sm:w-6 sm:h-6 text-zinc-400 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
         </button>
 
-        <div className="pl-6 md:pl-12">
+        <div className="pl-4 sm:pl-6 md:pl-12">
           <div
             ref={containerRef}
             onScroll={handleScroll}
-            className="flex gap-6 md:gap-8 overflow-x-auto snap-x snap-mandatory scrollbar-hide pb-12 pr-6 md:pr-12"
+            className="flex gap-4 sm:gap-6 md:gap-8 overflow-x-auto snap-x snap-mandatory scrollbar-hide pb-8 sm:pb-12 pr-4 sm:pr-6 md:pr-12"
             style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
           >
             {/* Internal styles to hide scrollbar for webkit browsers */}
@@ -157,7 +157,7 @@ export default function CreativeWorks() {
                 viewport={{ once: true, margin: "-10%" }}
                 transition={{ duration: 0.6, delay: index * 0.1, ease: [0.16, 1, 0.3, 1] }}
                 key={index}
-                className="relative flex-none w-[90vw] sm:w-[85vw] md:w-[60vw] lg:w-[45vw] snap-center group cursor-grab active:cursor-grabbing"
+                className="relative flex-none w-[85vw] sm:w-[80vw] md:w-[60vw] lg:w-[45vw] snap-center group cursor-grab active:cursor-grabbing"
               >
                 <div className="relative w-full aspect-[16/9] bg-zinc-950 border border-zinc-900 overflow-hidden">
                   <motion.div
@@ -169,7 +169,7 @@ export default function CreativeWorks() {
                       src={project.image}
                       alt={project.title}
                       fill
-                      className="object-contain p-4 transition-transform duration-[1500ms] ease-out hover:scale-105"
+                      className="object-contain p-3 sm:p-4 transition-transform duration-[1500ms] ease-out hover:scale-105"
                     />
                   </motion.div>
                   {/* No overlay or text needed on the image itself */}
@@ -181,12 +181,12 @@ export default function CreativeWorks() {
                   whileInView={{ y: 0, opacity: 1 }}
                   viewport={{ once: true, margin: "-10%" }}
                   transition={{ duration: 0.8, delay: 0.3 }}
-                  className="mt-4 flex flex-col"
+                  className="mt-3 sm:mt-4 flex flex-col"
                 >
-                  <span className="text-[10px] md:text-xs font-mono text-zinc-500 tracking-widest uppercase mb-1">
+                  <span className="text-[9px] sm:text-[10px] md:text-xs font-mono text-zinc-500 tracking-widest uppercase mb-1">
                     {project.role}
                   </span>
-                  <h3 className="font-syne font-bold text-xl sm:text-2xl md:text-3xl uppercase tracking-tight text-white group-hover:text-zinc-300 transition-colors">
+                  <h3 className="font-syne font-bold text-lg sm:text-xl md:text-3xl uppercase tracking-tight text-white group-hover:text-zinc-300 transition-colors">
                     {project.title}
                   </h3>
                 </motion.div>

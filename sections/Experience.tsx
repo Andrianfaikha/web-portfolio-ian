@@ -45,16 +45,16 @@ export default function Experience() {
   return (
     <section
       id="experience"
-      className="bg-black py-24 md:py-36 px-6 md:px-12 border-t border-zinc-900"
+      className="bg-black py-20 md:py-36 px-4 sm:px-6 md:px-12 border-t border-zinc-900"
     >
       <div className="max-w-7xl mx-auto w-full">
 
         {/* Header Section */}
-        <div className="flex flex-col lg:flex-row lg:justify-between items-start gap-6 mb-20 select-none">
-          <h2 className="font-syne font-black text-3xl min-[375px]:text-4xl min-[430px]:text-5xl sm:text-6xl md:text-8xl lg:text-[7vw] leading-none uppercase tracking-tighter">
+        <div className="flex flex-col lg:flex-row lg:justify-between items-start gap-6 mb-16 md:mb-20 select-none">
+          <h2 className="font-syne font-black text-section-heading uppercase">
             EXPERIENCE
           </h2>
-          <p className="max-w-xs text-xs md:text-sm text-zinc-500 leading-relaxed tracking-wider pt-3">
+          <p className="max-w-xs text-xs md:text-sm text-zinc-500 leading-relaxed tracking-wider pt-1 md:pt-3">
             A comprehensive path bridging advanced technical orchestration, rigorous product discovery, and pixel-perfect design aesthetics.
           </p>
         </div>
@@ -68,21 +68,21 @@ export default function Experience() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-10%" }}
               transition={{ duration: 0.8, delay: index * 0.1, ease: [0.16, 1, 0.3, 1] }}
-              className="group grid grid-cols-1 md:grid-cols-12 gap-6 py-10 border-b border-zinc-900 items-start hover:bg-zinc-950/40 transition-colors duration-500 px-4 -mx-4"
+              className="group grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-6 py-8 md:py-10 border-b border-zinc-900 items-start hover:bg-zinc-950/40 transition-colors duration-500 px-2 md:px-4 -mx-2 md:-mx-4"
             >
               {/* Year Column */}
               <div className="col-span-12 md:col-span-3 flex items-center md:items-start">
-                <span className="font-syne font-black text-3xl md:text-4xl text-zinc-700 tracking-tighter group-hover:text-white transition-colors duration-500">
+                <span className="font-syne font-black text-xl md:text-4xl text-zinc-700 tracking-tighter group-hover:text-white transition-colors duration-500">
                   {exp.year}
                 </span>
               </div>
 
               {/* Position / Company Column */}
               <div className="col-span-12 md:col-span-4">
-                <h3 className="font-syne font-extrabold text-xl md:text-2xl text-white tracking-tight uppercase">
+                <h3 className="font-syne font-extrabold text-lg md:text-2xl text-white tracking-tight uppercase">
                   {exp.role}
                 </h3>
-                <span className="text-xs font-mono text-zinc-500 tracking-widest uppercase mt-1 block">
+                <span className="text-[10px] md:text-xs font-mono text-zinc-500 tracking-widest uppercase mt-1 block">
                   @ {exp.company}
                 </span>
               </div>
