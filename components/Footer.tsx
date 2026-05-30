@@ -20,7 +20,7 @@ export default function Footer() {
             IAN © 2026
           </span>
           <span className="text-[9px] font-mono text-zinc-600 uppercase tracking-widest">
-            All Rights Reserved. Brutalist Editorial Concept.
+            All Rights Reserved.
           </span>
         </div>
 
