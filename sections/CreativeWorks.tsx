@@ -8,7 +8,7 @@ const creativeProjects = [
   {
     title: "Onewill Solusi Indonesia",
     role: "Digital Marketing & Visual Editor Intern",
-    image: "/creative/onewillsolusi.png",
+    image: "/creative/Onewillsolusi.png",
   },
   {
     title: "Alfath Retail",
@@ -18,12 +18,12 @@ const creativeProjects = [
   {
     title: "Uno1Padel Club Malang",
     role: "Social Media Manager",
-    image: "/creative/uno1padel.png",
+    image: "/creative/Uno1Padel.png",
   },
   {
     title: "Uno1Tennis Club Malang",
     role: "Freelance Graphic Design",
-    image: "/creative/uno1tennis.png",
+    image: "/creative/Uno1tennis.png",
   },
   {
     title: "EuphoriaSeni 2024 EM UB",
@@ -43,7 +43,7 @@ const creativeProjects = [
   {
     title: "LKMM - TM BEM FILKOM UB 2024",
     role: "Vice Head of Design Visual Documentation",
-    image: "/creative/lkmm.png",
+    image: "/creative/LKMM.png",
   },
   {
     title: "Eufoghia Al-Bayan Anyer",

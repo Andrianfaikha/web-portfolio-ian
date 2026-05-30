@@ -23,7 +23,7 @@ const projects = [
     title: "CUANKI Money Manager",
     role: "UI/UX Designer",
     year: "2025",
-    image: "/cuanki.png",
+    image: "/Cuanki.png",
     desc: [
       "Conducted user research and persona building",
       "Designed user flows and wireframes",
