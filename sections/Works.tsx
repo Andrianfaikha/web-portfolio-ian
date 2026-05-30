@@ -101,7 +101,7 @@ export default function Works() {
               </div>
 
               {/* Box containing the project mockup image */}
-              <motion.div 
+              <motion.div
                 initial={{ filter: "grayscale(100%) contrast(1.2)" }}
                 whileInView={{ filter: "grayscale(0%) contrast(1)" }}
                 viewport={{ once: true, margin: "-20%" }}

@@ -42,10 +42,10 @@ export default function Skills() {
     >
       <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 md:px-12 mb-12 md:mb-16">
         <div className="flex flex-col lg:flex-row lg:justify-between items-start gap-4">
-          <h2 className="font-syne font-black text-section-heading uppercase">
+          <h2 className="font-syne font-black text-section-heading uppercase min-w-0">
             CAPABILITIES
           </h2>
-          <p className="max-w-xs text-xs md:text-sm text-zinc-500 leading-relaxed tracking-wider pt-1 md:pt-3">
+          <p className="max-w-xs text-xs md:text-sm text-zinc-500 leading-relaxed tracking-wider pt-1 md:pt-3 flex-shrink-0">
             A comprehensive list of visual tools, system architectures, and execution strategies honed to craft premium products.
           </p>
         </div>

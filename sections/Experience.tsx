@@ -51,10 +51,10 @@ export default function Experience() {
 
         {/* Header Section */}
         <div className="flex flex-col lg:flex-row lg:justify-between items-start gap-6 mb-16 md:mb-20 select-none">
-          <h2 className="font-syne font-black text-section-heading uppercase">
+          <h2 className="font-syne font-black text-section-heading uppercase min-w-0">
             EXPERIENCE
           </h2>
-          <p className="max-w-xs text-xs md:text-sm text-zinc-500 leading-relaxed tracking-wider pt-1 md:pt-3">
+          <p className="max-w-xs text-xs md:text-sm text-zinc-500 leading-relaxed tracking-wider pt-1 md:pt-3 flex-shrink-0">
             A comprehensive path bridging advanced technical orchestration, rigorous product discovery, and pixel-perfect design aesthetics.
           </p>
         </div>
