@@ -60,7 +60,7 @@ export default function CreativeWorks() {
     if (!containerRef.current) return;
     const container = containerRef.current;
     const scrollCenter = container.scrollLeft + container.clientWidth / 2;
-    
+
     let closestIndex = 0;
     let minDistance = Infinity;
 
@@ -109,7 +109,7 @@ export default function CreativeWorks() {
           </h2>
         </div>
         <p className="text-zinc-400 font-sans text-xs sm:text-sm md:text-base mt-4 sm:mt-6 max-w-2xl">
-          Use the arrows or swipe to explore my creative design projects, ranging from digital marketing campaigns, event inaugurations, to social media branding.
+          Use the arrows or swipe to explore my creative design projects, ranging from digital marketing campaigns, padel community design, to social media branding.
         </p>
       </div>
 
@@ -174,9 +174,9 @@ export default function CreativeWorks() {
                   </motion.div>
                   {/* No overlay or text needed on the image itself */}
                 </div>
-                
+
                 {/* Project Info Below Image */}
-                <motion.div 
+                <motion.div
                   initial={{ y: 20, opacity: 0 }}
                   whileInView={{ y: 0, opacity: 1 }}
                   viewport={{ once: true, margin: "-10%" }}

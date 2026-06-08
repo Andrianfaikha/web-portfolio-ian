@@ -57,7 +57,7 @@ const projects = [
       "Defined product roadmap and feature strategy",
       "Managed collaboration between design and development teams",
       "Conducted user research and market analysis",
-      "Created user flows and sprint planning"
+      "Created user flows and planning"
     ]
   }
 ];
@@ -70,7 +70,7 @@ export default function Works() {
         {/* Section Header with Massive Swiss Typography */}
         <div className="flex justify-between items-baseline mb-16 md:mb-20 relative z-10 select-none">
           <h2 className="font-syne font-black text-section-heading uppercase">
-            SELECTED<br />
+            PROJECTS<br />
             <span className="text-zinc-500 font-light">WORKS</span>
           </h2>
           <span className="text-xs text-zinc-500 font-mono tracking-widest uppercase hidden md:block">
@@ -91,15 +91,15 @@ export default function Works() {
             >
               {/* Overlay link for the entire card if project.link exists */}
               {project.link && (
-                <a 
-                  href={project.link} 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="absolute inset-0 z-20 cursor-pointer" 
-                  aria-label={`View ${project.title}`} 
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="absolute inset-0 z-20 cursor-pointer"
+                  aria-label={`View ${project.title}`}
                 />
               )}
-              
+
               <div className="flex justify-between items-end mb-4 border-b border-zinc-900 pb-4">
                 <div className="min-w-0 flex-1">
                   <span className="text-[12px] font-mono text-zinc-500 tracking-wider mb-2 block">
@@ -115,7 +115,7 @@ export default function Works() {
               </div>
 
               {/* Box containing the project mockup image */}
-              <motion.div 
+              <motion.div
                 initial={{ filter: "grayscale(100%) contrast(1.2)" }}
                 whileInView={{ filter: "grayscale(0%) contrast(1)" }}
                 viewport={{ once: true, margin: "-20%" }}

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const socialLinks = [
   { name: "Email", val: "andrianfaikha2411@gmail.com", href: "mailto:andrianfaikha2411@gmail.com" },
-  { name: "LinkedIn", val: "andrian faikha", href: "https://linkedin.com/in/andrianfaikha" },
+  { name: "LinkedIn", val: "andrian faikha", href: "https://www.linkedin.com/in/andrian-faikha-671859270/" },
   { name: "GitHub", val: "Andrianfaikha", href: "https://github.com/Andrianfaikha" },
   { name: "Instagram", val: "andrian.fi", href: "https://instagram.com/andrian.fi" },
 ];

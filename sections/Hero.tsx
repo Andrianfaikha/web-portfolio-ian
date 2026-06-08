@@ -55,26 +55,48 @@ export default function Hero() {
           className="col-span-12 lg:col-span-6 relative flex items-center justify-center h-[350px] sm:h-[50vh] lg:h-[70vh] w-full"
         >
           {/* Back Stack Image Layer */}
-          <div className="absolute w-[60%] h-[80%] border border-zinc-800 opacity-20 -rotate-6 translate-x-4 -translate-y-4 pointer-events-none" />
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 0.2, scale: 1 }}
+            transition={{ duration: 1.5, ease: [0.16, 1, 0.3, 1], delay: 0.5 }}
+            className="absolute w-[60%] h-[80%] border border-zinc-800 -rotate-6 translate-x-4 -translate-y-4 pointer-events-none"
+          />
           
           {/* Main Portrait Wrapper */}
-          <div className="relative w-[70%] h-[90%] md:w-[65%] md:h-[95%] lg:w-[80%] lg:h-[90%] bg-zinc-950 overflow-hidden contrast-125 border border-zinc-900 shadow-2xl group">
-            <Image
-              src="/ian_profile.png"
-              alt="Ian Profile"
-              fill
-              priority
-              className="object-contain transition-transform duration-[2000ms] ease-out group-hover:scale-105"
-            />
-            {/* Dark vignette grid */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
-          </div>
+          <motion.div
+            initial={{ clipPath: "inset(100% 0% 0% 0%)" }}
+            animate={{ clipPath: "inset(0% 0% 0% 0%)" }}
+            transition={{ duration: 1.5, ease: [0.77, 0, 0.175, 1], delay: 0.1 }}
+            className="relative w-[70%] h-[90%] md:w-[65%] md:h-[95%] lg:w-[80%] lg:h-[90%] bg-zinc-950 overflow-hidden contrast-125 border border-zinc-900 shadow-2xl group"
+          >
+            <motion.div
+              initial={{ scale: 1.3, filter: "blur(10px)" }}
+              animate={{ scale: 1, filter: "blur(0px)" }}
+              transition={{ duration: 1.5, ease: [0.77, 0, 0.175, 1], delay: 0.1 }}
+              className="absolute inset-0 w-full h-full"
+            >
+              <Image
+                src="/ian_profile.png"
+                alt="Ian Profile"
+                fill
+                priority
+                className="object-contain transition-transform duration-[2000ms] ease-out group-hover:scale-105"
+              />
+              {/* Dark vignette grid */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
+            </motion.div>
+          </motion.div>
 
           {/* Overlapping Info Tag */}
-          <div className="absolute bottom-2 left-4 sm:left-6 lg:left-0 bg-black/85 border border-zinc-800/80 backdrop-blur px-4 sm:px-5 py-2 sm:py-3 flex flex-col space-y-1">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeOut", delay: 1 }}
+            className="absolute bottom-2 left-4 sm:left-6 lg:left-0 bg-black/85 border border-zinc-800/80 backdrop-blur px-4 sm:px-5 py-2 sm:py-3 flex flex-col space-y-1"
+          >
             <span className="text-[9px] text-zinc-500 uppercase tracking-widest font-mono">Location</span>
             <span className="text-[11px] uppercase tracking-wider font-syne font-bold text-white">Jakarta, ID</span>
-          </div>
+          </motion.div>
         </motion.div>
 
         {/* Right Side / Overlapping Text: Editorial Swiss Layout */}
