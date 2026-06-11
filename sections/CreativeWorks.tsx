@@ -6,6 +6,11 @@ import { motion } from "framer-motion";
 
 const creativeProjects = [
   {
+    title: "Padel Joy Jakarta",
+    role: "Social Media manager",
+    image: "/creative/padeljoy.png",
+  },
+  {
     title: "Onewill Solusi Indonesia",
     role: "Digital Marketing & Visual Editor Intern",
     image: "/creative/Onewillsolusi.png",
