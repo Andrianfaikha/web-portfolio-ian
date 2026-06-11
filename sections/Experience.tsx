@@ -4,6 +4,12 @@ import { motion } from "framer-motion";
 
 const experiences = [
   {
+    year: "Feb 2026 — Mar 2026",
+    role: "Social Media Manager Freelance",
+    company: "Padel Joy",
+    desc: "Designed and produced Instagram feed content aligned with brand identity. Edited short-form video content (Reels) to improve audience engagement and content performance. Managed Instagram content planning, copywriting, and story publishing, while collaborating on social media content strategy.",
+  },
+  {
     year: "Aug 2025 — Apr 2026",
     role: "Digital Marketing Specialist Freelance",
     company: "OneWill Solusi Indonesia",
