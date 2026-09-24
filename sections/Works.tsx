@@ -15,7 +15,7 @@ const projects = [
       "Developed an enterprise E-Learning web app used by 300+ users across 48+ courses and 83+ modules",
       "Integrated REST APIs and implemented frontend/backend features based on business requirements",
       "Performed testing, debugging, and QC to ensure application reliability and performance",
-      "DCollaborated via GitBucket across development, deployment, and maintenance"
+      "Collaborated via GitBucket across development, deployment, and maintenance"
     ]
   },
   {

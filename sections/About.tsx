@@ -57,11 +57,19 @@ export default function About() {
                 [ Introduction ]
               </span>
               <p className="font-syne font-medium text-about-intro text-white uppercase break-words hyphens-auto">
-                An Information Technology undergraduate blending data-driven analytics with premium user-centered design.
+                An Information Technology undergraduate Web developer blending data-driven analytics with premium user-centered design.
               </p>
-              <p className="text-xs md:text-sm text-zinc-400 leading-relaxed tracking-wider font-sans pt-2 break-words">
-                With a strong foundation in UI/UX design, product management, and frontend development, I bridge the gap between technical execution and creative direction. I have experience in managing social media performance, leading product discovery cycles, and building interactive prototypes that harmonize function with absolute artistic perfection.
-              </p>
+              <div className="space-y-4">
+                <p className="text-xs md:text-sm text-zinc-400 leading-relaxed tracking-wider font-sans pt-2 break-words">
+                  Bridging the gap between technical execution and creative direction, my core focus lies firmly in Web Development. Making an architect scalable, highly performant, and accessible digital experiences. I'm also treat performance optimization and clean architecture not as afterthoughts, but as the foundational pillars of my engineering process.
+                </p>
+                <p className="text-xs md:text-sm text-zinc-400 leading-relaxed tracking-wider font-sans break-words">
+                  Beyond writing code, I view a digital presence as a holistic ecosystem. My background in UI/UX design and social media management ensures that every product I build truly connects with its audience, delivering impactful, and an inspiring experiences that drive growth business value.
+                </p>
+                <p className="text-xs md:text-sm text-zinc-400 leading-relaxed tracking-wider font-sans break-words">
+                  Furthermore, I have a deep and growing interest in Data Analytics and Machine Learning. I am constantly exploring how data-driven intelligence can be leveraged to shape smarter, more predictive digital solutions. I aim to build services that not only look incredible but also adapt intelligently to user needs.
+                </p>
+              </div>
             </motion.div>
 
           </div>

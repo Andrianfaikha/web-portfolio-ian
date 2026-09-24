@@ -45,11 +45,10 @@ export default function Navbar() {
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-        className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 border-b ${
-          scrolled
+        className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 border-b ${scrolled
             ? "bg-black/50 backdrop-blur-xl border-zinc-800/40 py-4"
             : "bg-transparent border-transparent py-6"
-        }`}
+          }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 flex justify-between items-center">
           {/* Logo */}
@@ -57,10 +56,10 @@ export default function Navbar() {
             href="#home"
             className="group relative flex items-center z-[60]"
           >
-            <img 
-              src="/logo.png" 
-              alt="Andrian Faikha" 
-              className="h-5 md:h-6 object-contain transition-transform duration-300 group-hover:scale-105" 
+            <img
+              src="/logo.png"
+              alt="Andrian Faikha"
+              className="h-5 md:h-6 object-contain transition-transform duration-300 group-hover:scale-105"
             />
           </a>
 
@@ -85,19 +84,16 @@ export default function Navbar() {
             aria-label="Toggle Menu"
           >
             <span
-              className={`block w-6 h-[2px] bg-white transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] ${
-                menuOpen ? "rotate-45 translate-y-[8px]" : ""
-              }`}
+              className={`block w-6 h-[2px] bg-white transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] ${menuOpen ? "rotate-45 translate-y-[8px]" : ""
+                }`}
             />
             <span
-              className={`block w-6 h-[2px] bg-white transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] ${
-                menuOpen ? "opacity-0 scale-x-0" : ""
-              }`}
+              className={`block w-6 h-[2px] bg-white transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] ${menuOpen ? "opacity-0 scale-x-0" : ""
+                }`}
             />
             <span
-              className={`block w-6 h-[2px] bg-white transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] ${
-                menuOpen ? "-rotate-45 -translate-y-[8px]" : ""
-              }`}
+              className={`block w-6 h-[2px] bg-white transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] ${menuOpen ? "-rotate-45 -translate-y-[8px]" : ""
+                }`}
             />
           </button>
         </div>
