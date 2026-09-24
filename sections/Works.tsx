@@ -7,7 +7,20 @@ import { motion, useScroll, useTransform } from "framer-motion";
 const projects = [
   {
     num: "01",
-    title: "Majadigi Super App",
+    title: "E-Learning Web PT. Cemindo Gemilang Tbk",
+    role: "Fullstack Web Developer",
+    year: "2026",
+    image: "/cemindo.png",
+    desc: [
+      "Developed an enterprise E-Learning web app used by 300+ users across 48+ courses and 83+ modules",
+      "Integrated REST APIs and implemented frontend/backend features based on business requirements",
+      "Performed testing, debugging, and QC to ensure application reliability and performance",
+      "DCollaborated via GitBucket across development, deployment, and maintenance"
+    ]
+  },
+  {
+    num: "02",
+    title: "Majadigi Komidigi Super App",
     role: "UI/UX Designer",
     year: "2026",
     image: "/majadigi.png",
@@ -19,7 +32,7 @@ const projects = [
     ]
   },
   {
-    num: "02",
+    num: "03",
     title: "CUANKI Money Manager",
     role: "UI/UX Designer",
     year: "2025",
@@ -33,7 +46,7 @@ const projects = [
     ]
   },
   {
-    num: "03",
+    num: "04",
     title: "WellSync",
     role: "UI/UX Designer",
     year: "2026",
@@ -47,7 +60,7 @@ const projects = [
     ]
   },
   {
-    num: "04",
+    num: "05",
     title: "KopianKu",
     role: "Product Manager",
     year: "2026",

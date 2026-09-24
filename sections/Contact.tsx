@@ -41,7 +41,7 @@ export default function Contact() {
 
           <div className="mt-12 sm:mt-24">
             <a
-              href="https://drive.google.com/file/d/1X55H-zgFlqtN3FAu8p-qCur2QmJto7nI/view?usp=sharing"
+              href="https://drive.google.com/file/d/1-sy6DSpDUKPujZ8ScvgEBAnoechrkEXy/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 px-6 sm:px-8 py-4 border border-zinc-700 text-white font-mono text-[10px] sm:text-xs md:text-sm uppercase tracking-[0.15em] sm:tracking-[0.2em] hover:bg-white hover:text-black transition-all duration-300 group"

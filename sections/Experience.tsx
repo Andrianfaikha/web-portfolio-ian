@@ -4,6 +4,12 @@ import { motion } from "framer-motion";
 
 const experiences = [
   {
+    year: "juli 2026 — Sep 2026",
+    role: "Fullstack Web Developer Intern",
+    company: "PT. Cemindo Gemilang Tbk",
+    desc: "Developed an enterprise E-Learning web application for the Learning & Development Department, serving 300+ users across 48+ courses and 83+ modules using React, Node.js, TypeScript, Strapi, and PostgreSQL/MySQL. Contributed to REST API integration, frontend and backend development, testing, debugging, QC, and team collaboration through GitBucket.",
+  },
+  {
     year: "Feb 2026 — Mar 2026",
     role: "Social Media Manager Freelance",
     company: "Padel Joy",
